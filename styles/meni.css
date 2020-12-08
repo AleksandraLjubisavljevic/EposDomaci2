@@ -1,0 +1,207 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgb(216, 216, 189);
+  background-image: url(https://scontent.fbeg5-1.fna.fbcdn.net/v/t1.0-9/56276039_1013726015682302_7826296420452794368_o.jpg?_nc_cat=100&ccb=2&_nc_sid=9267fe&_nc_ohc=cThTeGcHekAAX-1IjBz&_nc_ht=scontent.fbeg5-1.fna&oh=ad593505303679f4010af65742c882d2&oe=5FE81E56);
+  position: sticky;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#logo {
+  border-radius: 50%;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+  margin-right: 50px;
+  margin-left: 10px;
+  position: fixed;
+}
+
+#naslov {
+  font-family: Cookie;
+  font-size: 4.5vw;
+  text-align: center;
+  color: bisque;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+#podnaslov{
+  text-align: center;
+  color:bisque;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-width: 1px;
+  font-size: 6vw;
+  font-family:'Times New Roman', Times, serif;
+}
+nav{
+  background-color: rgb(48, 47, 47);
+  opacity: 80%;
+  height: 80px;
+  width: 100%;
+}
+
+img.logo {
+  border-radius: 50%;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+  margin-right: 50px;
+  margin-left: 10px;
+  position: fixed;
+}
+
+nav ul{
+  text-align: center;
+}
+nav  ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  
+}
+nav ul li a{
+  font-size: 25px;
+  padding: 15px 40px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: bisque;
+  text-decoration: none;
+}
+.pozadina a.active, .pozadina a:hover{
+  background: rgb(139, 88, 25);
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+.slika{
+    width: 60%;
+}
+@media (max-width:1300px){
+  nav ul li a{
+      padding: 15px 25px;  
+      font-size: 20px;
+      }
+
+}
+@media (max-width: 1000px){
+  
+  nav ul li a{
+  padding: 15px 15px;  
+  font-size: 15px;
+  }
+
+}
+@media (max-width: 800px){
+  .checkbtn{
+    display: block;
+  }
+  #naslov{
+    font-size: 5.5vw;
+}
+   ul{
+    position: fixed;
+    width: 100%;
+    height: 60vh;
+    background: rgb(48, 47, 47);
+    top: 150px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color:rgb(139, 88, 25);
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prethodno, .sledece {
+  cursor: pointer;
+  position:absolute;
+  top: 50%;
+  width: auto;
+  padding: 1%;
+  color: black;
+  background-color: bisque;
+  transition: 0.5s ease;
+  border-radius: 0 3px 3px 0;
+}
+.prethodno{
+    left:18%;
+}
+.sledece {
+  right: 18%;
+}
+
+.prethodno:hover, .sledece:hover {
+  background-color: rgba(53, 39, 10, 0.8);
+}
+
+.slika{
+  margin-left: 20%;
+  border: bisque 10px solid;
+  
+}
+footer img{
+  width:5vw;
+  height:5vw;
+ }
+       
+   footer {
+    position: static; 
+    width: 100%;
+    text-align: center;
+    background-color: rgb(58, 52, 52);
+    color: bisque;
+    font-size: 2vw;
+    padding-top: 3px; 
+  
+  }
+  @media screen and (max-width: 600px) {
+    
+    footer {
+      font-size: 2.5vw;
+     }
+}
